@@ -1,1 +1,19 @@
 @import url(../style.css);
+
+:root {
+    --yellowButton: #e7bb26;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellowButton);
+    height: 40px;
+    min-width: 180px;
+    border: none;
+    border-radius: 200px;
+    font-size: 15px;
+    font-family: interBold;
+    padding: 0 20px 0 20px;
+}

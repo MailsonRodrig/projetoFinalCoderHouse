@@ -1,21 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: interBlack;
     src: url(src/font/Inter-Black.ttf);
 }
+
 @font-face {
     font-family: interBold;
     src: url(src/font/Inter-Bold.ttf);
 }
+
 @font-face {
     font-family: interExtraBold;
     src: url(src/font/Inter-ExtraBold.ttf);
 }
+
 @font-face {
     font-family: interSemiBold;
     src: url(src/font/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: interRegular;
+    src: url(src/font/Inter-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: interBold;
+}
+
+h1 {
+    font-family: interExtraBold;
+    font-size: 53px;
+}
+
+h2 {
+    font-family: interRegular;
+    font-size: 21px;
+}
+
+.logotype{
+    height: 25px;
+    width: auto;
 }

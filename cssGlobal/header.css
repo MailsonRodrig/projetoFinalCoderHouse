@@ -1,0 +1,33 @@
+@import url(../style.css);
+@import url(../cssGlobal/button.css);
+
+header{
+    height: 66px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#userMenu{
+    margin-right: 10px;
+}
+
+.divMenuHeader{
+    display: flex;
+    color: white;
+}
+
+#menuHeader{
+    margin-right: 10px;
+}
+
+.logotypeHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 100%;
+    width: 200px;
+}
