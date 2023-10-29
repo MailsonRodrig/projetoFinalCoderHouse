@@ -2,9 +2,13 @@
 @import url(../cssGlobal/header.css);
 @import url(../cssGlobal/inputText.css);
 @import url(../cssGlobal/imgSlide.css);
-@import url(../cssGlobal/cardsMovie.css);
+@import url(../cssGlobal/cardsMovieNote.css);
 
 .cardCategory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
     height: 2900px;
     width: 100%;
     background-color: aquamarine;

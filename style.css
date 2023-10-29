@@ -1,3 +1,7 @@
+@import url(./cssGlobal/buttonMyList.css);
+@import url(./cssGlobal/button.css);
+
+
 @font-face {
     font-family: interBlack;
     src: url(src/font/Inter-Black.ttf);

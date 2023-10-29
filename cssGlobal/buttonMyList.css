@@ -1,0 +1,21 @@
+@import url(../style.css);
+
+:root {
+    --yellowButton: #e7bb26;
+}
+
+.buttonMyList{
+    height: 70px;
+    width: 142px;
+    border-radius: 15px;
+    background-color: var(--yellowButton);
+        border: solid rgb(0, 0, 0) 1px;
+}
+.buttonTrailer{
+    height: 70px;
+    width: 142px;
+    border-radius: 15px;
+    background-color: #353535;
+    color: white;
+    border: solid white 1px;
+}
