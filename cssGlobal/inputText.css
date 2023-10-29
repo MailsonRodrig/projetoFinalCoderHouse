@@ -1,0 +1,8 @@
+@import url(../style.css);
+
+input[type="text"]{
+    height: 29px;
+    width: 700px;
+    border-radius: 10px;
+}
+

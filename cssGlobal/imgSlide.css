@@ -1,0 +1,31 @@
+@import url(../style.css);
+
+:root {
+    --yellowButton: #e7bb26;
+}
+
+.imgCategory {
+    height: 670px;
+    width: 100%;
+    background-image: url(../src/img/supense.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dividingBar {
+    height: 130px;
+    width: 100%;
+}
+#dividingBar h1, #dividingBar h2{
+    margin-left: 20px;
+    color: white;
+}
+
+.categoryDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
