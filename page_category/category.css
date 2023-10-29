@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
-    height: 2900px;
+    height: auto;
     width: 100%;
     background-color: aquamarine;
 }
