@@ -39,6 +39,11 @@ h2 {
     font-family: interRegular;
     font-size: 21px;
 }
+pre {
+    font-family: interRegular;
+    font-size: 25px;
+    color: white;
+}
 
 .logotype{
     height: 30px;
