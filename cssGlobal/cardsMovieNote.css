@@ -9,14 +9,18 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
-    height: 900px;
-    width: 345px;
+    height: 820px;
+    width: 23.5%;
     margin: 20px 10px;
 }
 
-.cardsMovieCategory img {
-    width: 100%;
-    height: 577px;
+#MoviesCardsImg {
+    padding-left: 20px;
+    color: aliceblue;
+    width: 93.8%;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .descriptionMovie {
@@ -82,6 +86,37 @@
     margin-left: 15px;
 }
 
-.divButtonCard{
+.divButtonCard {
     display: flex;
+}
+
+#saveMovie {
+    height: 77px;
+    width: 58px;
+}
+
+#MoviesCardsImg.cardsMovieCategory01 {
+    background-image: url(../src/img/capaFilmes/externals.png);
+}
+
+#MoviesCardsImg.cardsMovieCategory02 {
+    background-image: url(../src/img/capaFilmes/barbie.jpg);
+}
+#MoviesCardsImg.cardsMovieCategory03 {
+    background-image: url(../src/img/capaFilmes/johnwiker.png);
+}
+#MoviesCardsImg.cardsMovieCategory04 {
+    background-image: url(../src/img/capaFilmes/aqueda.png);
+}
+#MoviesCardsImg.cardsMovieCategory05 {
+    background-image: url(../src/img/capaFilmes/batman.png);
+}
+#MoviesCardsImg.cardsMovieCategory06 {
+    background-image: url(../src/img/capaFilmes/psicose.png);
+}
+#MoviesCardsImg.cardsMovieCategory07 {
+    background-image: url(../src/img/capaFilmes/clubedaluta.png);
+}
+#MoviesCardsImg.cardsMovieCategory08 {
+    background-image: url(../src/img/capaFilmes/somdaliberdade.png);
 }
