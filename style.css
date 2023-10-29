@@ -1,5 +1,10 @@
 @import url(./cssGlobal/buttonMyList.css);
-@import url(./cssGlobal/button.css);
+@import url(./cssGlobal/buttonYellow.css);
+@import url(./cssGlobal/header.css);
+@import url(./cssGlobal/inputText.css);
+@import url(./cssGlobal/imgSlide.css);
+@import url(./cssGlobal/cardsMovieNote.css);
+@import url(./cssGlobal/footer.css);
 
 
 @font-face {

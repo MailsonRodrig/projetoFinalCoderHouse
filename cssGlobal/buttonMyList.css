@@ -1,21 +1,28 @@
-@import url(../style.css);
 
 :root {
     --yellowButton: #e7bb26;
 }
 
-.buttonMyList{
-    height: 70px;
-    width: 142px;
+.buttonMyList {
+    height: 60px;
+    width: 135px;
     border-radius: 15px;
     background-color: var(--yellowButton);
-        border: solid rgb(0, 0, 0) 1px;
+    border: solid rgb(0, 0, 0) 1px;
 }
-.buttonTrailer{
-    height: 70px;
-    width: 142px;
+
+.buttonTrailer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 122px;
     border-radius: 15px;
     background-color: #353535;
     color: white;
     border: solid white 1px;
+}
+
+.buttonTrailer img{
+    padding-right: 8px;
 }
