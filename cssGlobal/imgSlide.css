@@ -13,32 +13,36 @@
 }
 
 #dividingBar {
-    background-color: aqua;
     display: flex;
     align-items: flex-end;
-    height: 100%;
+    height: auto;
     width: 100%;
+    margin-bottom: 50px;
 }
-#dividingBar h1, #dividingBar h2{
+
+#dividingBar h1,
+#dividingBar h2 {
     margin-left: 20px;
     color: white;
 }
 
 .categoryDescription {
+    display: flex;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
 }
 
-#divYellow{
+#divYellow {
     margin-left: 50px;
     background-color: var(--yellowButton);
+    color: var(--yellowButton);
     height: 130px;
     width: 20px;
     border-radius: 5px;
 }
 
-#descriptionMovieMain{
+#descriptionMovieMain {
     height: 70px;
     width: 100vw;
 }
-

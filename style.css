@@ -22,6 +22,10 @@
     font-family: interRegular;
     src: url(src/font/Inter-Regular.ttf);
 }
+@font-face {
+    font-family: interLight;
+    src: url(src/font/Inter-Light.ttf);
+}
 
 * {
     margin: 0;
@@ -36,8 +40,9 @@ h1 {
 }
 
 h2 {
-    font-family: interRegular;
+    font-family: interLight;
     font-size: 21px;
+    font-weight: lighter;
 }
 pre {
     font-family: interRegular;
