@@ -1,28 +1,29 @@
-
 :root {
     --yellowButton: #e7bb26;
 }
 
 .buttonMyList {
-    height: 60px;
+    height: 55px;
     width: 135px;
     border-radius: 15px;
     background-color: var(--yellowButton);
     border: solid rgb(0, 0, 0) 1px;
+    cursor: pointer;
 }
 
 .buttonTrailer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 55px;
     width: 122px;
     border-radius: 15px;
     background-color: #353535;
     color: white;
     border: solid white 1px;
+    cursor: pointer;
 }
 
-.buttonTrailer img{
+.buttonTrailer img {
     padding-right: 8px;
 }
