@@ -1,29 +1,30 @@
 @import url(../style.css);
 @import url(../cssGlobal/button.css);
 
-header{
+header {
     height: 66px;
     width: 100vw;
     background-color: rgb(0, 0, 0);
-
+    border-bottom: 1px solid #313131;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-#userMenu{
+
+#userMenu {
     margin-right: 10px;
 }
 
-.divMenuHeader{
+.divMenuHeader {
     display: flex;
     color: white;
 }
 
-#menuHeader{
+#menuHeader {
     margin-right: 10px;
 }
 
-.logotypeHeader{
+.logotypeHeader {
     display: flex;
     align-items: center;
     justify-content: center;
