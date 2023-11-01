@@ -51,7 +51,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../src/img/cardPrincipal.png);
 }
