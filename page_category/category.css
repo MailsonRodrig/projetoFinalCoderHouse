@@ -1,11 +1,12 @@
 @import url(../style.css);
 
-.cardCategory{
+.cardCategory {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: flex-start;
+    margin: auto;
     height: auto;
-    width: 100%;
+    width: 97%;
     background-color: rgb(0, 0, 0);
 }
