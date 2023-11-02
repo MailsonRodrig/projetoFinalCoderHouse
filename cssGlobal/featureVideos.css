@@ -1,7 +1,4 @@
-:root {
-    --yellowButton: #e7bb26;
-}
-
+ 
 .featureVideos {
     display: flex;
     justify-content: space-evenly;

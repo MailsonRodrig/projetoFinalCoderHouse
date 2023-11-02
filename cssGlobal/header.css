@@ -1,6 +1,3 @@
-@import url(../style.css);
-@import url(../cssGlobal/button.css);
-
 header {
     height: 66px;
     width: 100vw;
@@ -30,4 +27,8 @@ header {
     justify-content: center;
     height: 100%;
     width: 200px;
+}
+
+.logotype{
+    height: 2em;
 }

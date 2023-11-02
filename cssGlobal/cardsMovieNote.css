@@ -1,26 +1,23 @@
-@import url(../style.css);
-
-:root {
-    --yellowButton: #e7bb26;
-}
+@import url(./colors.css);
 
 .cardsMovieCategory {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
-    height: 650px;
+    height: 38em;
     width: 22%;
     margin: 20px 10px;
 }
 
 #MoviesCardsImg {
-    padding-left: 20px;
     color: aliceblue;
-    width: 93.8%;
-    height: 500px;
+    height: 100%;
+    width: auto;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
 }
 
 .descriptionMovie {
@@ -28,14 +25,14 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color: #262626;
-    height: 290px;
-    width: 101.2%;
+    background-color: #1F1F1F;
+    height: 14em;
+    width: 100%;
 }
 
 .notaCards {
     display: flex;
-    align-items: end;
+    align-items: baseline;
     justify-content: flex-end;
     font-size: 20px;
     font-family: interRegular;
@@ -45,8 +42,11 @@
 }
 
 .cardsTitulo {
-    height: 55px;
+    height: 20%;
     width: 100%;
+    padding-top: 5px;
+    border-top: solid #353535 1px;
+    border-bottom: solid #353535 1px;
 }
 
 
@@ -58,7 +58,7 @@
     justify-content: center;
     font-size: 0.77em;
     font-family: interLight;
-    color: white;
+     color: white;
     height: 100px;
     width: 92%;
     text-align: justify;
@@ -68,33 +68,35 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 120px;
-    width: 92%;
+    height: 17%;
+    width: 100%;
 }
 
 #starValue {
-    height: 25px;
+    height: 1.2em;
     width: auto;
-    margin: 0 20px 0 5px;
+    margin: 5px 20px 0 5px;
 }
 
 .cardsTitulo {
     display: flex;
-    align-items: center;
-}
+ }
 
 .cardsTitulo h1 {
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: lighter;
     color: white;
-    margin-left: 15px;
-}
+    margin-left: .8em;
+ }
 
 .divButtonCard {
     display: flex;
+    border-top: solid #353535 1px;
+    background-color: #1F1F1F;
 }
 
 #saveMovie {
+    margin-left: 10px;
     height: 50px;
     width: auto;
 }
@@ -106,45 +108,59 @@
 #MoviesCardsImg.cardsMovieCategory02 {
     background-image: url(../src/img/capaFilmes/barbie.jpg);
 }
+
 #MoviesCardsImg.cardsMovieCategory03 {
     background-image: url(../src/img/capaFilmes/johnwiker.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory04 {
     background-image: url(../src/img/capaFilmes/aqueda.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory05 {
     background-image: url(../src/img/capaFilmes/batman.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory06 {
     background-image: url(../src/img/capaFilmes/psicose.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory07 {
     background-image: url(../src/img/capaFilmes/clubedaluta.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory08 {
     background-image: url(../src/img/capaFilmes/somdaliberdade.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory09 {
     background-image: url(../src/img/capaFilmes/assassinosluadasflores.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory10 {
     background-image: url(../src/img/capaFilmes/achamada.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory11 {
     background-image: url(../src/img/capaFilmes/frionosossos.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory12 {
     background-image: url(../src/img/capaFilmes/encurralados.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory13 {
     background-image: url(../src/img/capaFilmes/oPacto.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory14 {
     background-image: url(../src/img/capaFilmes/aBailarina.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory15 {
     background-image: url(../src/img/capaFilmes/aMae.png);
 }
+
 #MoviesCardsImg.cardsMovieCategory16 {
     background-image: url(../src/img/capaFilmes/substitutos.png);
 }

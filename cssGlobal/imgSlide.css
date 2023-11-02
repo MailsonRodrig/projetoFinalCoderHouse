@@ -1,7 +1,4 @@
-
-:root {
-    --yellowButton: #e7bb26;
-}
+@import url(./colors.css);
 
 .imgCategory {
     height: 711px;
@@ -10,8 +7,7 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    margin-bottom: 80px;
-}
+ }
 
 #dividingBar {
     display: flex;
@@ -23,10 +19,16 @@
 
 #dividingBar h1,
 #dividingBar h2 {
+    font-family: interRegular;
     margin-left: 20px;
+    font-weight: lighter;
     color: white;
 }
-
+#dividingBar h1{
+    font-family: interExtraBold;
+    font-weight: bolder;
+    font-size: 3em;
+}
 .categoryDescription {
     display: flex;
     align-items: flex-end;

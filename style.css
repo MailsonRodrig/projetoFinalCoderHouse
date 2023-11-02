@@ -33,6 +33,7 @@
     font-family: interRegular;
     src: url(src/font/Inter-Regular.ttf);
 }
+
 @font-face {
     font-family: interLight;
     src: url(src/font/Inter-Light.ttf);
@@ -41,34 +42,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 17px;
+    font-size: 1em;
     font-family: interBold;
 }
 
-h1 {
-    font-family: interExtraBold;
-    font-size: 50px;
-}
-
-h2 {
-    font-family: interLight;
-    font-size: 21px;
-    font-weight: lighter;
-}
-pre {
-    font-family: interRegular;
-    font-size: 25px;
-    color: white;
-}
-
-.logotype{
-    height: 30px;
-    width: auto;
-}
-
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
-body{
+
+body {
     background-color: black;
 }

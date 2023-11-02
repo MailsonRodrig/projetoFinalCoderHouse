@@ -1,7 +1,4 @@
-:root {
-    --yellowButton: #e7bb26;
-}
-
+ 
 a{
     text-decoration: none;
     color: var(--yellowButton);
