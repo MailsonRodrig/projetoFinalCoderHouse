@@ -9,7 +9,7 @@
     background-image: url(../src/img/supense.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: contain;
     margin-bottom: 50px;
 }
 
