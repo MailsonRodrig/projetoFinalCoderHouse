@@ -8,7 +8,7 @@
     font-size: .9em;
     font-family: interRegular;
     height: 3em;
-    width: 7em;
+    width: auto;
     border-radius: 15px;
     background-color: var(--yellowButton);
     border: solid rgb(0, 0, 0) 1px;
@@ -19,10 +19,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: interRegular;
-    font-size: .9em;
     height: 3em;
-    width: 7em;
+    width: auto;
     border-radius: 15px;
     background-color: #353535;
     color: white;
@@ -30,10 +28,17 @@
     cursor: pointer;
 }
 
+.buttonTrailer h2 {
+    font-family: interRegular;
+    font-size: .9em;
+    padding-right: 20px;
+}
+
 .buttonTrailer img {
     height: 1.5em;
     width: auto;
     padding-right: 8px;
+    padding-left: 18px;
 }
 
 .tituloMainBig {
