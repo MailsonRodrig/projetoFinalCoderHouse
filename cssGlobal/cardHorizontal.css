@@ -1,0 +1,78 @@
+.divHorizontal .sectionName {
+    height: 50px;
+    width: 95%;
+    margin: auto;
+}
+
+.cardIndex {
+    width: 32%;
+    margin-top: 20px;
+}
+
+.cardHorizontal--index {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    gap: 20px;
+
+}
+
+.descripIndex h1 {
+    margin: 10px 0;
+    color: var(--yellowButton);
+    font-size: 1.1em;
+    font-family: interRegular;
+    font-kerning: none;
+}
+
+.descripIndex h2 {
+    color: white;
+    font-size: 1em;
+    font-family: interLight;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.cardHorizImg {
+    height: 210px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.cardHorizImg#index01 {
+    background-image: url(../src/img/cardHorizontalIndex/01.png);
+}
+
+.cardHorizImg#index02 {
+    background-image: url(../src/img/cardHorizontalIndex/02.png);
+}
+
+.cardHorizImg#index03 {
+    background-image: url(../src/img/cardHorizontalIndex/03.png);
+}
+
+.playTime {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.playTime img {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.playTime h2 {
+    font-family: interLight;
+    font-weight: lighter;
+}
