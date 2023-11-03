@@ -26,6 +26,7 @@
 
  .buttonTrailer h2 {
      font-family: interRegular;
+     font-weight: lighter;
      font-size: 1em;
      padding-right: 15px;
  }
