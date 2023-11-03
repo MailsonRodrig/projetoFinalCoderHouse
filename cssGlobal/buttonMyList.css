@@ -3,7 +3,7 @@
      font-size: .9em;
      font-family: interRegular;
      height: 3em;
-     width: 50%;
+     width: auto;
      border-radius: 15px;
      background-color: var(--yellowButton);
      border: solid rgb(0, 0, 0) 1px;
@@ -16,7 +16,7 @@
      align-items: center;
      justify-content: center;
      height: 2.7em;
-     width: 100%;
+     width: auto;
      border-radius: 15px;
      background-color: #353535;
      color: white;
