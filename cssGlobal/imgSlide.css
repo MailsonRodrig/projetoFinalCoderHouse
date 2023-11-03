@@ -38,12 +38,12 @@
 }
 
 #divYellow {
-    margin-left: 50px;
+    margin-left: 120px;
     margin-top: 10px;
     background-color: var(--yellowButton);
     color: var(--yellowButton);
     height: 100px;
-    width: 20px;
+    width: 8px;
     border-radius: 5px;
 }
 
