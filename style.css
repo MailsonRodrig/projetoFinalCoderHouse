@@ -51,5 +51,8 @@ body::-webkit-scrollbar {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
 }
