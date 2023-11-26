@@ -9,6 +9,7 @@
 @import url(./cssGlobal/featureVideos.css);
 @import url(./cssGlobal/cardHorizontal.css);
 @import url(./cssGlobal/navCategory.css);
+@import url(./cssGlobal/buttonLogin.css);
 
 @font-face {
     font-family: interBlack;
@@ -57,3 +58,4 @@ body {
     align-items: center;
     background-color: black;
 }
+
