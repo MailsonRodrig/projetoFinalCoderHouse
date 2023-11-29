@@ -1,13 +1,13 @@
-input[type="text"] {
+input {
     height: 2.1em;
     width: 40em;
     border-radius: 1em;
-    margin-left: 30px;
     padding-left: 20px;
     color: var(--yellowButton);
+    font-family: interBold;
 }
 
-input[type="text"]::placeholder{
+input::placeholder{
    color: rgb(189, 189, 189);
 }
 
