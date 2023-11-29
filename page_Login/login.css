@@ -2,7 +2,7 @@
 
 main {
     box-sizing: border-box;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: flex-start;
     width: 100vw;
@@ -11,19 +11,19 @@ main {
 #msgLogin {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    width: 50%;
-    height: 100vh;
+     width: 50%;
+    height: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #imgLoginCard {
     width: 50vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url("../src/img/cardsMain/loginImg.png");
     background-repeat: no-repeat;
-    background-size: auto ;
+    background-size: cover;
+    background-position: left top;
 }
 
 
@@ -32,6 +32,7 @@ main {
     align-items: center;
     color: white;
     margin-bottom: 1em;
+    margin-top: 3em;
 }
 
 .titLogin #divYellow {
@@ -52,9 +53,10 @@ main {
 }
 
 #esquecSenha h2 {
-    font-size: .8em;
+    font-size: .9em;
     font-family: interRegular;
     font-weight: lighter;
+    color: var(--yellowButton);
 }
 
 button img {

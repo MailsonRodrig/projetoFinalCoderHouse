@@ -3,6 +3,12 @@ input[type="text"] {
     width: 40em;
     border-radius: 1em;
     margin-left: 30px;
+    padding-left: 20px;
+    color: var(--yellowButton);
+}
+
+input[type="text"]::placeholder{
+   color: rgb(189, 189, 189);
 }
 
 #searchHeader {
