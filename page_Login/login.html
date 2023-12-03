@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
             <input type="text" name="" placeholder="Buscar Filmes">
             <img src="../src/icon/search.svg" alt="" id="searchHeader">
         </div>
-        <a href="./page_Login/login.html">
+        <a href="./page_Login/login.html" id="ocultButt">
             <button class="buttonYellow">
                 <img src="../src/icon/User.svg" alt="" id="userMenu">
                 Acessar conta
@@ -33,24 +33,26 @@
     </header>
 
     <main>
-        <div id="imgLoginCard"></div>
+        <div id="imgLoginCard">
+            <img src="../src/img/cardsMain/loginImg_Degrade.png" alt="" id="degradeBlack">
+        </div>
         <div id="msgLogin">
             <div class="titLogin">
                 <div id="divYellow">-</div>
-                <h1>Faça login para aproveitar todas as vantagens de um Supercinéfilo</h1>
+                <h1 id="divYellowMLN">Faça login para aproveitar todas as vantagens de um Supercinéfilo</h1>
             </div>
             <form action="" id="formLogin">
                 <label for="">E-mail</label>
-                <input type="email" name="" id="" placeholder="Digite seu e-mail">
+                <input type="email" name="" id="inputName" placeholder="Digite seu e-mail">
                 <label for="">Senha</label>
-                <input type="email" name="" id="" placeholder="Digite sua senha">
+                <input type="email" name="" id="inputEmail" placeholder="Digite sua senha">
             </form>
             <div id="esquecSenha">
                 <h2>Esqueceu a senha?</h2>
             </div>
 
             <div class="acessLogin">
-                <button class="buttonYellow">Login</button>
+                <button class="buttonYellow" id="buttonLogin">Login</button>
                 <button class="buttonYellow" id="naoTemConta">Não tem conta? Criar Login</button>
             </div>
 
@@ -76,8 +78,9 @@
         <a href="https://www.coderhouse.com.br/">www.coderhouse.com</a>
     </footer>
 
-
+    <script type="text/javascript" src="./login.js"></script>
 
 </body>
+
 
 </html>
