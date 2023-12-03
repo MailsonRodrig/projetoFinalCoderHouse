@@ -6,7 +6,8 @@ main {
     justify-content: flex-start;
     width: 100vw;
 }
-#degradeBlack{
+
+#degradeBlack {
     width: 100%;
     height: 100%;
 }
@@ -125,7 +126,7 @@ button img {
     }
 
     input {
-        width: 13em;
+        width: 3em;
         padding-left: unset;
     }
 
@@ -136,5 +137,18 @@ button img {
     #ocultButt {
         display: none;
     }
- 
+
+    .logotype {
+        height: 1.5em;
+    }
+
+    .searchHeaderIcon {
+        width: 2.5em;
+        border-radius: 100%;
+    }
+
+    #searchHeader {
+        right: 40px;
+        background-color: unset;
+    }
 }
