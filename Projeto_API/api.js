@@ -34,12 +34,12 @@ function displayMovieDetails(movie) {
 
     imgCapa.src = movie.Poster;
     planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
+    notaFilme.innerHTML = movie.Ratings[1].Value
     tituloFilme.innerHTML = movie.Title
     anoFilme.innerHTML = movie.Year
     plotFilme.innerHTML = movie.Plot
     classifiFilme.innerHTML = movie.Rated
     tempoFilme.innerHTML = movie.Runtime
-    notaFilme.innerHTML = movie.Ratings[1].Value
 
     movieDetailsElement.innerHTML = `
                 <h2>${movie.Title}</h2>
