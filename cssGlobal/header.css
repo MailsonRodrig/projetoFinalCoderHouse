@@ -36,3 +36,54 @@ header {
 }
 
  
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #imgLoginCard {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    #msgLogin {
+        width: 100vw;
+        height: 35em;
+    }
+
+    .searchHeaderIcon {
+        width: unset;
+    }
+
+    input {
+        width: 3em;
+        padding-left: unset;
+    }
+
+    input::placeholder {
+        color: #ffffff;
+    }
+
+    #ocultButt {
+        display: none;
+    }
+
+    .logotype {
+        height: 1.5em;
+    }
+
+    .searchHeaderIcon {
+        width: 2.5em;
+        border-radius: 100%;
+    }
+
+    #searchHeader {
+        right: 40px;
+        background-color: unset;
+    }
+}
