@@ -1,3 +1,23 @@
+@font-face {
+    font-family: interBlack;
+    src: url(./font/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: extraLight;
+    src: url(./font/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: interLight;
+    src: url(./font/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: interRegular;
+    src: url(./font/Inter-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +30,38 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     height: 8%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#searchMovie {
+    display: flex;
+    position: relative;
+    right: 550px;
+    color: #E7BB26;
+    margin-right: 20px;
+    font-family: interRegular;
+    font-weight: lighter;
+}
+
+input {
+    height: 2.3em;
+    width: 30em;
+}
+#lupa{
+    height: 2.2em;
+}
+
+button {
+    height: 2.7em;
+    background-color: #E7BB26;
+    margin-right: 50px;
+    width: 10em;
 }
 
 main {
@@ -32,42 +81,75 @@ main {
 
 .resulApi {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
 #dadosApi {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 94%;
     width: 32em;
-    background-color: rgb(39, 233, 65);
     margin-left: 1em;
+    gap: 10px;
 }
 
 #inforFilme {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: brown;
-}
-
-section {
-    height: 4%;
     width: 100%;
-    background-color: rgb(101, 153, 117);
+    height: 2em;
+    padding: 0 10px 0 10px;
+}
+#inforFilme h2{
+    font-size: 1.2em;
 }
 
+#mln{
+    color: #E7BB26;
+}
+
+#plotFilme{
+    text-indent: 3em;
+    font-weight: lighter;
+    text-align: justify;
+}
+ 
 #planoFundo {
     background-image: url(./img/01.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 }
+
 #planoFundo {
     transition-duration: 5s;
-     background-position: bottom center;
+    background-position: bottom center;
 }
+
 #imageFundo {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.856);
     width: 100%;
     height: 100%;
+}
+
+h1 {
+    font-family: interBlack;
+    color: white;
+}
+
+h2 {
+    font-family: interRegular;
+    color: white;
+}
+
+h3 {
+    font-family: interRegular;
+    color: white;
 }
