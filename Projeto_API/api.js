@@ -1,11 +1,9 @@
 function searchMovie() {
-    // Substitua 'SuaChaveDeAPI' pela chave que você obteve do site do OMDB
     const apiKey = 'fc1fef96';
     const baseUrl = 'http://www.omdbapi.com/';
 
     const movieTitle = document.getElementById('movieTitle').value;
 
-    // Certifique-se de substituir 'SuaChaveDeAPI' pela chave de API real que você obteve
     fetch(`${baseUrl}?apikey=${apiKey}&t=${movieTitle}`)
         .then(response => response.json())
         .then(data => {
