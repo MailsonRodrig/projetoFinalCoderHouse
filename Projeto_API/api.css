@@ -59,10 +59,13 @@ section {
 #planoFundo {
     background-image: url(./img/01.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
 }
-
+#planoFundo {
+    transition-duration: 5s;
+     background-position: bottom center;
+}
 #imageFundo {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
