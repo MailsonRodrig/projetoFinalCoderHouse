@@ -42,7 +42,7 @@ main {
     margin-left: 1em;
 }
 
-#inforFilme{
+#inforFilme {
     display: flex;
     justify-content: space-between;
     background-color: brown;
@@ -52,4 +52,16 @@ section {
     height: 4%;
     width: 100%;
     background-color: rgb(101, 153, 117);
+}
+
+#planoFundo {
+    background-image: url(./img/01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#imageFundo {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
 }
