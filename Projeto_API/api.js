@@ -43,11 +43,5 @@ function displayMovieDetails(movie) {
     let mln01 = document.getElementById("mln01")
     mln01.src = movie.Poster
 
-    movieDetailsElement.innerHTML = `
-                <h2>${movie.Title}</h2>
-                <p><strong>Ano:</strong> ${movie.Year}</p>
-                <p><strong>Classificação:</strong> ${movie.Rated}</p>
-                <p><strong>Gênero:</strong> ${movie.Genre}</p>
-                <!-- Adicione mais detalhes conforme necessário -->
-            `;
+ 
 }
