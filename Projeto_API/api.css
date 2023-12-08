@@ -53,7 +53,8 @@ input {
     height: 2.3em;
     width: 30em;
 }
-#lupa{
+
+#lupa {
     height: 2.2em;
 }
 
@@ -107,31 +108,29 @@ main {
     height: 2em;
     padding: 0 10px 0 10px;
 }
-#inforFilme h2{
+
+#inforFilme h2 {
     font-size: 1.2em;
 }
 
-#mln{
+#mln {
     color: #E7BB26;
 }
 
-#plotFilme{
+#plotFilme {
     text-indent: 3em;
     font-weight: lighter;
     text-align: justify;
 }
- 
+
 #planoFundo {
     background-image: url(./img/01.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
     background-size: cover;
 }
 
-#planoFundo {
-    transition-duration: 5s;
-    background-position: bottom center;
-}
+
 
 #imageFundo {
     background-color: rgba(0, 0, 0, 0.856);
@@ -154,7 +153,7 @@ h3 {
     color: white;
 }
 
-#imgCard{
+#imgCard {
     margin: auto;
     display: flex;
     align-items: center;
@@ -163,7 +162,8 @@ h3 {
     position: relative;
     top: 7px;
 }
-.imgCards{
+
+.imgCards {
     height: 12em;
     margin: 0 8px;
 }

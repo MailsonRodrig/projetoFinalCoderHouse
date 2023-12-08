@@ -7,7 +7,7 @@ function searchMovie() {
     fetch(`${baseUrl}?apikey=${apiKey}&t=${movieTitle}`)
         .then(response => response.json())
         .then(data => {
-            if (data.Response === "True") {
+            if (data.Response) {
                 displayMovieDetails(data);
             } else {
                 alert(`Filme '${movieTitle}' não encontrado.`);
@@ -17,7 +17,6 @@ function searchMovie() {
 }
 
 function displayMovieDetails(movie) {
-    const movieDetailsElement = document.getElementById('movieDetails');
 
     let tituloFilme = document.getElementById("mln")
     let anoFilme = document.getElementById("anoFilme")
@@ -30,6 +29,7 @@ function displayMovieDetails(movie) {
     let planoFundo = document.getElementById("planoFundo")
     let planoFundoIMG = movie.Poster
     planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
+ 
 
     imgCapa.src = movie.Poster;
     notaFilme.innerHTML = movie.Ratings[1].Value
