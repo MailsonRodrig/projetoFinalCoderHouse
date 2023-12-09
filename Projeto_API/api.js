@@ -1,3 +1,11 @@
+/*OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=bae0c5bf
+
+Click the following URL to activate your key: 
+http://www.omdbapi.com/apikey.aspx?VERIFYKEY=9c8f2079-886f-4dbb-984e-e86228bf97c9
+If you did not make this request, please disregard this email.
+*/
+
+
 function searchMovie() {
     const apiKey = 'fc1fef96';
     const baseUrl = 'http://www.omdbapi.com/';
