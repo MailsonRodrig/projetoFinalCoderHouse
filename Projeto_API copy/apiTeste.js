@@ -17,7 +17,6 @@ function capaFilmes() {
 
 function exibirCapaFilme(movie) {
 
-
     let tituloFilme = document.getElementById("mln")
     tituloFilme.innerHTML = movie.Search[0].Title
     let anoFilme = document.getElementById("mln")
@@ -28,26 +27,21 @@ function exibirCapaFilme(movie) {
     let planoFundoIMG = movie.Search[2].Poster
     planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
 
-    let imgCard = document.getElementById("imgCard")
-    let img = document.querySelector("#imgCard img")
+    let imgCapa = document.getElementById("imgCapa")
+    imgCapa.src = movie.Search[0].Poster
 
-    if (img) {
-        imgCard.removeChild(img)
+    for (let i = 1; i < 9; i++) {
+        let img = document.createElement("img")
+        img.src = movie.Search[i].Poster
+
+        imgCard.appendChild(img)
     }
-    else {
-        for (let i = 0; i < 8; i++) {
-            let img = document.createElement("img")
-            img.src = movie.Search[i].Poster
-
-            imgCard.appendChild(img)
-        }
-
-    }
-
-
 }
+ 
 
 
+
+ 
 buttonPesquisar.addEventListener("click", capaFilmes)
 buttonPesquisar.addEventListener("click", descricaoFilme)
 
@@ -87,10 +81,6 @@ function formatarDescricao(movie) {
     classifiFilme.innerHTML = movie.Rated
     tempoFilme.innerHTML = movie.Runtime
     notaFilme.innerHTML = `${movie.Metascore} %`
-
-
-    let mln01 = document.getElementById("mln01")
-    mln01.src = movie.Poster
 
     console.log("voce clicou")
 }
