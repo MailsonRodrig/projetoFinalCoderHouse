@@ -47,10 +47,6 @@ function exibirCapaFilme(movie) {
     }
 }
 
-
-
-
-
 buttonPesquisar.addEventListener("click", capaFilmes)
 buttonPesquisar.addEventListener("click", descricaoFilme)
 
@@ -58,7 +54,7 @@ function descricaoFilme() {
 
     const movieTitle = document.getElementById('movieTitle').value;
 
-    fetch(`http://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}`)
+    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}`)
         .then(response => response.json())
         .then(data => {
             if (data.Response) {
