@@ -30,6 +30,15 @@ function exibirCapaFilme(movie) {
     let imgCapa = document.getElementById("imgCapa")
     imgCapa.src = movie.Search[0].Poster
 
+    const imgCard = document.getElementById("imgCard");
+
+    while (imgCard.hasChildNodes()) {
+        imgCard.removeChild(imgCard.firstChild);
+    }
+
+
+
+
     for (let i = 1; i < 9; i++) {
         let img = document.createElement("img")
         img.src = movie.Search[i].Poster
@@ -37,11 +46,11 @@ function exibirCapaFilme(movie) {
         imgCard.appendChild(img)
     }
 }
- 
 
 
 
- 
+
+
 buttonPesquisar.addEventListener("click", capaFilmes)
 buttonPesquisar.addEventListener("click", descricaoFilme)
 
