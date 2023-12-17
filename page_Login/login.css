@@ -1,7 +1,7 @@
 @import url(../style.css);
 
 main {
-    height: auto;
+    height: 89vh;
     display: flex;
     justify-content: flex-start;
     width: 100vw;
