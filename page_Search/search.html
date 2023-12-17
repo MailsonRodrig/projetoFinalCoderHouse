@@ -10,18 +10,25 @@
 
 <body>
     <header>
+        <div class="logotypeHeader">
+            <a href="../index.html">
+                <img src="../src/icon/supercinaLogotipo.svg" alt="" class="logotype">
+            </a>
+        </div>
+
         <label for="movieTitle"></label>
         <input type="text" id="movieTitle">
-        <button id="buttonPesquisar"><img src="./img/search.svg" alt="" id="lupa"></button>
+        <button id="buttonPesquisar" class="buttonYellow"><img src="./img/search.svg" alt="" id="lupa"></button>
 
     </header>
+
     <main id="planoFundo">
         <div id="imageFundo">
 
             <div class="resulApi">
                 <img src="./img/01.jpg" alt="" id="imgCapa">
                 <div id="dadosApi">
-                    <h1 id="mln"> </h1>
+                    <h1 id="tituloPesquisaFilme"> </h1>
                     <div id="inforFilme">
                         <h2 id="anoFilme"> </h2>
                         <h2 id="classifiFilme"> </h2>
@@ -36,7 +43,7 @@
     </main>
 
     <div id="imgCard">
- 
+
     </div>
 
     <script src="./search.js"></script>

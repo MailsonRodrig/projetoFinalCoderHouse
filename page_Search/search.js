@@ -3,7 +3,7 @@ const buttonPesquisar = document.getElementById('buttonPesquisar')
 
 
 function carregarPagina() {
-
+    
     const movieTitle = localStorage.getItem("tituloFilme")
 
     fetch(`https://omdbapi.com/?s=${movieTitle}&page=1&apikey=bae0c5bf`)
@@ -20,9 +20,9 @@ function carregarPagina() {
 
     function exibirCapaFilme(movie) {
 
-        let tituloFilme = document.getElementById("mln")
+        let tituloFilme = document.getElementById("tituloPesquisaFilme")
         tituloFilme.innerHTML = movie.Search[0].Title
-        let anoFilme = document.getElementById("mln")
+        let anoFilme = document.getElementById("tituloPesquisaFilme")
         anoFilme.innerHTML = movie.Search[0].Title
 
 
@@ -71,7 +71,7 @@ function carregarPagina() {
 
     function formatarDescricao(movie) {
 
-        let tituloFilme = document.getElementById("mln")
+        let tituloFilme = document.getElementById("tituloPesquisaFilme")
         let anoFilme = document.getElementById("anoFilme")
         let classifiFilme = document.getElementById("classifiFilme")
         let plotFilme = document.getElementById("plotFilme")
@@ -119,9 +119,9 @@ function capaFilmes() {
 
 function exibirCapaFilme(movie) {
 
-    let tituloFilme = document.getElementById("mln")
+    let tituloFilme = document.getElementById("tituloPesquisaFilme")
     tituloFilme.innerHTML = movie.Search[0].Title
-    let anoFilme = document.getElementById("mln")
+    let anoFilme = document.getElementById("tituloPesquisaFilme")
     anoFilme.innerHTML = movie.Search[0].Title
 
 
@@ -170,7 +170,7 @@ function descricaoFilme() {
 
 function formatarDescricao(movie) {
 
-    let tituloFilme = document.getElementById("mln")
+    let tituloFilme = document.getElementById("tituloPesquisaFilme")
     let anoFilme = document.getElementById("anoFilme")
     let classifiFilme = document.getElementById("classifiFilme")
     let plotFilme = document.getElementById("plotFilme")

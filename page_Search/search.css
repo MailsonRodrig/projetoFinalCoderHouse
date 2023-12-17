@@ -1,28 +1,7 @@
-@font-face {
-    font-family: interBlack;
-    src: url(./font/Inter-Black.ttf);
-}
+@import url(../style.css);
 
-@font-face {
-    font-family: extraLight;
-    src: url(./font/Inter-ExtraLight.ttf);
-}
 
-@font-face {
-    font-family: interLight;
-    src: url(./font/Inter-Light.ttf);
-}
-
-@font-face {
-    font-family: interRegular;
-    src: url(./font/Inter-Regular.ttf);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
+ 
 body {
     background-color: rgb(26, 26, 26);
     height: 100vh;
@@ -33,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 10%;
+    height: 12vh;
     width: 100%;
     background-color: rgb(26, 26, 26);
 
@@ -112,9 +91,10 @@ main {
     font-size: 1.2em;
 }
 
-#mln {
+#tituloPesquisaFilme {
+    font-size: 1.8em;
     color: #E7BB26;
-    margin-bottom: 1em;
+    margin-bottom: .1em;
 }
 
 #plotFilme {
@@ -168,3 +148,16 @@ h3 {
     width: 9em;
     margin: 0 8px;
 }
+
+#movieTitle{
+    margin-right: 1em;
+}
+
+.logotypeHeader{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -418px;
+}
+
+ 

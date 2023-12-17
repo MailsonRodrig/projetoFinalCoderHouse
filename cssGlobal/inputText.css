@@ -12,6 +12,7 @@ input::placeholder{
 }
 
 #searchHeader {
+    cursor: pointer;
     height: 2em;
     background-color: white;
     position: relative;
