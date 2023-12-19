@@ -8,6 +8,3 @@ el.addEventListener("click", function () {
  
     localStorage.setItem("tituloFilme", vlr);
 });
-
-
-
