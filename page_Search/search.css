@@ -1,21 +1,11 @@
 @import url(../style.css);
 
 
- 
+
 body {
     background-color: rgb(26, 26, 26);
     height: 100vh;
     width: 100vw;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 12vh;
-    width: 100%;
-    background-color: rgb(26, 26, 26);
-
 }
 
 #searchMovie {
@@ -28,20 +18,8 @@ header {
     font-weight: lighter;
 }
 
-input {
-    height: 2.3em;
-    width: 30em;
-}
-
 #lupa {
     height: 2.2em;
-}
-
-button {
-    height: 2.7em;
-    background-color: #E7BB26;
-    margin-right: 50px;
-    width: 10em;
 }
 
 main {
@@ -54,6 +32,7 @@ main {
 }
 
 #imgCapa {
+    visibility: hidden;
     width: auto;
     height: 90%;
     margin-left: 3em;
@@ -104,7 +83,7 @@ main {
 }
 
 #planoFundo {
-    background-image: url(./img/01.jpg);
+    visibility: hidden;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -149,15 +128,6 @@ h3 {
     margin: 0 8px;
 }
 
-#movieTitle{
+#movieTitle {
     margin-right: 1em;
 }
-
-.logotypeHeader{
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: -418px;
-}
-
- 

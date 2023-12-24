@@ -1,4 +1,4 @@
-const buttonPesquisar = document.getElementById('buttonPesquisar')
+const buttonPesquisar = document.getElementById('searchHeader')
 
 
 
@@ -29,9 +29,11 @@ function carregarPagina() {
         let planoFundo = document.getElementById("planoFundo")
         let planoFundoIMG = movie.Search[2].Poster
         planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
+        planoFundo.style.visibility = "visible"
 
         let imgCapa = document.getElementById("imgCapa")
         imgCapa.src = movie.Search[0].Poster
+        imgCapa.style.visibility = "visible"
 
         const imgCard = document.getElementById("imgCard");
 
@@ -101,7 +103,7 @@ window.onload = carregarPagina()
 
 
 function capaFilmes() {
-    const movieTitle = document.getElementById('movieTitle').value;
+    const movieTitle = document.getElementById('inputFilmesPesquisa').value;
 
     localStorage.setItem("tituloFilme", movieTitle);
 
@@ -128,9 +130,11 @@ function exibirCapaFilme(movie) {
     let planoFundo = document.getElementById("planoFundo")
     let planoFundoIMG = movie.Search[2].Poster
     planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
+    planoFundo.style.visibility = "visible"
 
     let imgCapa = document.getElementById("imgCapa")
     imgCapa.src = movie.Search[0].Poster
+    imgCapa.style.visibility = "visible"
 
     const imgCard = document.getElementById("imgCard");
 
