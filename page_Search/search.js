@@ -1,3 +1,6 @@
+//https://omdbapi.com/?t=hero&page=2&apikey=bae0c5bf
+
+
 const buttonPesquisar = document.getElementById('searchHeader')
 
 
@@ -57,9 +60,9 @@ function carregarPagina() {
 
 
 
+    //https://omdbapi.com/?t==${movieTitle}&page=2&apikey=bae0c5bf&plot=full
 
-
-    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}`)
+    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}&plot=full`)
         .then(response => response.json())
         .then(data => {
             if (data.Response) {
@@ -92,7 +95,7 @@ function carregarPagina() {
         tempoFilme.innerHTML = movie.Runtime
         notaFilme.innerHTML = `${movie.Metascore} %`
 
-        console.log("voce clicou")
+        console.log(movie)
     }
 
 
@@ -128,7 +131,7 @@ function exibirCapaFilme(movie) {
 
 
     let planoFundo = document.getElementById("planoFundo")
-    let planoFundoIMG = movie.Search[2].Poster
+    let planoFundoIMG = movie.Search[0].Poster
     planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
     planoFundo.style.visibility = "visible"
 
@@ -158,12 +161,13 @@ buttonPesquisar.addEventListener("click", descricaoFilme)
 
 function descricaoFilme() {
 
-    const movieTitle = document.getElementById('movieTitle').value;
+    const movieTitle = localStorage.getItem("tituloFilme")
 
-    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}`)
+    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}&plot=full`)
         .then(response => response.json())
         .then(data => {
             if (data.Response) {
+
                 formatarDescricao(data);
             } else {
                 alert(`Filme '${movieTitle}' não encontrado.`);
@@ -193,7 +197,7 @@ function formatarDescricao(movie) {
     tempoFilme.innerHTML = movie.Runtime
     notaFilme.innerHTML = `${movie.Metascore} %`
 
-    console.log("voce clicou")
+    console.log(movie.Plot)
 }
 
 

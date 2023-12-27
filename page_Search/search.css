@@ -51,7 +51,7 @@ main {
     align-items: flex-start;
     justify-content: flex-start;
     height: 94%;
-    width: 32em;
+    width: 65em;
     margin-left: 1em;
     gap: 10px;
 }
@@ -77,9 +77,12 @@ main {
 }
 
 #plotFilme {
+    padding: 0 1em 0 1em;
     text-indent: 3em;
     font-weight: lighter;
     text-align: justify;
+    height: 50%;
+    overflow-y: auto;
 }
 
 #planoFundo {
