@@ -26,7 +26,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 55%;
+    height: 59%;
     width: 100%;
     background-color: rgb(101, 101, 153);
 }
@@ -50,11 +50,14 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 94%;
-    width: 65em;
+    align-content: space-between;
+    height: 90%;
+    width: 66em;
     margin-left: 1em;
-    gap: 10px;
+    gap: 5px;
 }
+
+
 
 #inforFilme {
     box-sizing: border-box;
@@ -68,21 +71,22 @@ main {
 
 #inforFilme h2 {
     font-size: 1.2em;
+    padding: 5px 0;
 }
 
 #tituloPesquisaFilme {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #E7BB26;
     margin-bottom: .1em;
 }
 
 #plotFilme {
-    padding: 0 1em 0 1em;
+    margin-top: .6em;
     text-indent: 3em;
     font-weight: lighter;
     text-align: justify;
-    height: 50%;
-    overflow-y: auto;
+    height: 45%;
+
 }
 
 #planoFundo {
@@ -95,7 +99,7 @@ main {
 
 
 #imageFundo {
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(0, 0, 0, 0.911);
     width: 100%;
     height: 100%;
 }
@@ -116,21 +120,60 @@ h3 {
 }
 
 #imgCard {
-    margin: auto;
+    margin-top: .5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 13em;
+    height: auto;
+    width: 100%;
     position: relative;
-    top: 7px;
 }
 
 #imgCard img {
-    height: 12em;
-    width: 9em;
-    margin: 0 8px;
+    height: 10em;
+    width: 8em;
 }
 
 #movieTitle {
     margin-right: 1em;
+}
+
+#sobreFilme {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    column-gap: 15px;
+}
+
+.sobreFilmeInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sobreFilmeInfo h1 {
+    color: rgb(194, 49, 49);
+    font-family: interLight;
+    font-weight: lighter;
+}
+
+.sobreFilmeInfo h2 {
+    box-sizing: border-box;
+    color: #E7BB26;
+    width: 100%;
+    font-family: interLight;
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+.barraInfo {
+    display: flex;
+    align-items: center;
+}
+
+.barraInfo img {
+    height: 1.5em;
+    margin-right: .5em;
 }

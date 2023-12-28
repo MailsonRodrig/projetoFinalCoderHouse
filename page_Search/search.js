@@ -6,7 +6,7 @@ const buttonPesquisar = document.getElementById('searchHeader')
 
 
 function carregarPagina() {
-    
+
     const movieTitle = localStorage.getItem("tituloFilme")
 
     fetch(`https://omdbapi.com/?s=${movieTitle}&page=1&apikey=bae0c5bf`)
@@ -47,7 +47,7 @@ function carregarPagina() {
 
 
 
-        for (let i = 1; i < 9; i++) {
+        for (let i = 0; i < 9; i++) {
             let img = document.createElement("img")
             img.src = movie.Search[i].Poster
 
@@ -75,6 +75,7 @@ function carregarPagina() {
 
 
     function formatarDescricao(movie) {
+        console.log(movie)
 
         let tituloFilme = document.getElementById("tituloPesquisaFilme")
         let anoFilme = document.getElementById("anoFilme")
@@ -86,16 +87,25 @@ function carregarPagina() {
         let inforFilme = document.getElementById("inforFilme")
         inforFilme.style.backgroundColor = "brown"
 
+        let sobreFilmeGenre = document.getElementById("sobreFilmeGenre")
+        let sobreFilmeDirector = document.getElementById("sobreFilmeDirector")
+        let sobreFilmeWriter = document.getElementById("sobreFilmeWriter")
+        let sobreFilmeActors = document.getElementById("sobreFilmeActors")
+        let sobreFilmeLanguage = document.getElementById("sobreFilmeLanguage")
 
+        sobreFilmeGenre.innerHTML = movie.Genre
+        sobreFilmeDirector.innerHTML = movie.Director
+        sobreFilmeWriter.innerHTML = movie.Writer
+        sobreFilmeActors.innerHTML = movie.Actors
+        sobreFilmeLanguage.innerHTML = movie.Language
 
         tituloFilme.innerHTML = movie.Title
         anoFilme.innerHTML = movie.Year
         plotFilme.innerHTML = movie.Plot
         classifiFilme.innerHTML = movie.Rated
         tempoFilme.innerHTML = movie.Runtime
-        notaFilme.innerHTML = `${movie.Metascore} %`
+        notaFilme.innerHTML = movie.Ratings[1].Value
 
-        console.log(movie)
     }
 
 
@@ -148,7 +158,7 @@ function exibirCapaFilme(movie) {
 
 
 
-    for (let i = 1; i < 9; i++) {
+    for (let i = 0; i < 9; i++) {
         let img = document.createElement("img")
         img.src = movie.Search[i].Poster
 
@@ -185,9 +195,17 @@ function formatarDescricao(movie) {
     let tempoFilme = document.getElementById("tempoFilme")
     let notaFilme = document.getElementById("notaFilme")
 
-    let inforFilme = document.getElementById("inforFilme")
-    inforFilme.style.backgroundColor = "brown"
+    let sobreFilmeGenre = document.getElementById("sobreFilmeGenre")
+    let sobreFilmeDirector = document.getElementById("sobreFilmeDirector")
+    let sobreFilmeWriter = document.getElementById("sobreFilmeWriter")
+    let sobreFilmeActors = document.getElementById("sobreFilmeActors")
+    let sobreFilmeLanguage = document.getElementById("sobreFilmeLanguage")
 
+    sobreFilmeGenre.innerHTML = movie.Genre
+    sobreFilmeDirector.innerHTML = movie.Director
+    sobreFilmeWriter.innerHTML = movie.Writer
+    sobreFilmeActors.innerHTML = movie.Actors
+    sobreFilmeLanguage.innerHTML = movie.Language
 
 
     tituloFilme.innerHTML = movie.Title
@@ -195,7 +213,7 @@ function formatarDescricao(movie) {
     plotFilme.innerHTML = movie.Plot
     classifiFilme.innerHTML = movie.Rated
     tempoFilme.innerHTML = movie.Runtime
-    notaFilme.innerHTML = `${movie.Metascore} %`
+    notaFilme.innerHTML = movie.Ratings[1].Value
 
     console.log(movie.Plot)
 }
