@@ -48,10 +48,12 @@ function carregarPagina() {
 
 
         for (let i = 0; i < 9; i++) {
-            let img = document.createElement("img")
-            img.src = movie.Search[i].Poster
+            if (movie.Search[i].Poster !== "N/A"){
+                let img = document.createElement("img")
+                img.src = movie.Search[i].Poster
 
-            imgCard.appendChild(img)
+                imgCard.appendChild(img)
+            }
         }
     }
 
@@ -158,11 +160,14 @@ function exibirCapaFilme(movie) {
 
 
 
-    for (let i = 0; i < 9; i++) {
-        let img = document.createElement("img")
-        img.src = movie.Search[i].Poster
 
-        imgCard.appendChild(img)
+    for (let i = 0; i < 9; i++) {
+        if (movie.Search[i].Poster !== "N/A") {
+            let img = document.createElement("img")
+            img.src = movie.Search[i].Poster
+
+            imgCard.appendChild(img)
+        }
     }
 }
 
