@@ -106,7 +106,7 @@ function carregarPagina() {
         plotFilme.innerHTML = movie.Plot
         classifiFilme.innerHTML = movie.Rated
         tempoFilme.innerHTML = movie.Runtime
-        notaFilme.innerHTML = movie.Ratings[1].Value
+        notaFilme.innerHTML = movie.imdbRating
 
     }
 
@@ -218,7 +218,7 @@ function formatarDescricao(movie) {
     plotFilme.innerHTML = movie.Plot
     classifiFilme.innerHTML = movie.Rated
     tempoFilme.innerHTML = movie.Runtime
-    notaFilme.innerHTML = movie.Ratings[1].Value
+    notaFilme.innerHTML = movie.imdbRating
 
     console.log(movie.Plot)
 }
