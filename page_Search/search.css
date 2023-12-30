@@ -73,12 +73,6 @@ main {
     font-size: 1.2em;
 }
 
-#tituloPesquisaFilme {
-    font-size: 2em;
-    color: #E7BB26;
-    margin-bottom: .1em;
-}
-
 #plotFilme {
     margin-top: .6em;
     text-indent: 3em;
@@ -170,7 +164,7 @@ h3 {
 .barraInfo {
     display: flex;
     align-items: center;
-    padding: 0 1.5em;
+    padding: 01.5em;
 }
 
 .barraInfo img {

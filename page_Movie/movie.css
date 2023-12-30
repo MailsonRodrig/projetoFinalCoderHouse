@@ -1,0 +1,123 @@
+@import url(../style.css);
+
+main {
+    height: auto;
+    width: 100vw;
+}
+ 
+#descFilmeCapa {
+    margin-top: 1.5em;
+    display: flex;
+    height: 50vh;
+}
+
+#capaFilmes_movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+#imgMovie {
+    height:100%;
+    width: auto;
+}
+
+#capaFilmes_descricao {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-start;
+    height: 95%;
+    width: 65%;
+}
+
+#divYellow{
+    margin: 0;
+}
+#videoTrayler{
+    margin: auto;
+    height: 100vh;
+    width: 95vw;
+}
+
+#TituloMovie,
+#infoMovie,
+#plotMovie {
+    width: 98%;
+}
+
+.sectionName{
+    margin: 2em 0 2em 3em;
+}
+#TituloMovie {
+    display: flex;
+    height: auto;
+}
+
+h2 {
+    font-weight: lighter;
+    font-family: interLight;
+}
+
+#tituloPesquisaFilme {
+    margin-left: .3em;
+}
+
+#infoMovie {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+#plotMovie {
+    height: 62%;
+    text-indent: 2em;
+    font-family: interLight;
+    text-align: justify;
+}
+
+#iconMovie {
+    height: 1.4em;
+    margin-left: .2em;
+}
+
+#infoMovieDescricao {
+    display: flex;
+    gap: 2em;
+}
+
+#notaMovie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logotipoAcesso{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 3em;
+    width: 100%;
+    margin-left: 2em;
+}
+
+#logotipoAcesso img{
+    height: 8em;
+    border-radius: 50%;
+    margin-left: 2em;
+}

@@ -10,6 +10,7 @@
 @import url(./cssGlobal/cardHorizontal.css);
 @import url(./cssGlobal/navCategory.css);
 @import url(./cssGlobal/buttonLogin.css);
+@import url(./cssGlobal/titleYellow.css);
 
 @font-face {
     font-family: interBlack;

@@ -42,7 +42,7 @@
     margin-top: 10px;
     background-color: var(--yellowButton);
     color: var(--yellowButton);
-    height: 7em;
+    height: auto;
     width: 8px;
     border-radius: 5px;
 }
