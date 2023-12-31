@@ -34,7 +34,7 @@ main {
 #imgCapa {
     visibility: hidden;
     width: auto;
-    height: 90%;
+    height: 20rem;
     margin-left: 3em;
 }
 
@@ -52,7 +52,7 @@ main {
     justify-content: flex-start;
     align-content: space-between;
     height: 90%;
-    width: 66em;
+    width: 64em;
     margin-left: 1em;
     gap: 5px;
 }
