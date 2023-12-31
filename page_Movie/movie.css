@@ -38,6 +38,10 @@ main {
 #divYellow{
     margin: 0;
 }
+
+#inputFilmesPesquisa,#searchHeader{
+    visibility: hidden;
+}
 #videoTrayler{
     background-image: url(../src/img/capaFilmes/assassinosluadasflores.png);
     background-repeat: no-repeat;

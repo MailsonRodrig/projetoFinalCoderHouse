@@ -17,3 +17,28 @@ el.addEventListener("click", function () {
 
     localStorage.setItem("tituloFilme", vlr);
 });
+
+let dadosFilme = localStorage.getItem("DescricaoFilme")
+let dadosFilmeObj = JSON.parse(dadosFilme)
+console.log(dadosFilmeObj.Title)
+console.log(dadosFilme)
+
+let notaFilmeMovie = document.getElementById("notaFilmeMovie")
+let tituloPesquisaFilme = document.getElementById("tituloPesquisaFilme")
+let ducaraMovie = document.getElementById("ducaraMovie")
+let categoriaMovie = document.getElementById("categoriaMovie")
+let dataMovie = document.getElementById("dataMovie")
+let plotMovieDesc = document.getElementById("plotMovieDesc")
+let imgMovie = document.getElementById("imgMovie")
+let videoTrayler = document.getElementById("videoTrayler")
+
+tituloPesquisaFilme.innerHTML = dadosFilmeObj.Title
+notaFilmeMovie.innerHTML = dadosFilmeObj.Year
+ducaraMovie.innerHTML = dadosFilmeObj.Runtime
+categoriaMovie.innerHTML = dadosFilmeObj.Genre
+dataMovie.innerHTML = dadosFilmeObj.Released
+plotMovieDesc.innerHTML = dadosFilmeObj.Plot
+imgMovie.src = dadosFilmeObj.Poster
+
+videoTrayler.style.backgroundImage = `url("${dadosFilmeObj.Poster}")`
+console.log(dadosFilmeObj.Poster)

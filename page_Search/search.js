@@ -13,6 +13,9 @@ function carregarPagina() {
         .then(response => response.json())
         .then(data => {
             if (data.Response) {
+
+                localStorage.setItem("capasFilme", JSON.stringify(data))
+
                 exibirCapaFilme(data);
             } else {
                 alert(`Filme '${movieTitle}' não encontrado.`);
@@ -22,20 +25,26 @@ function carregarPagina() {
 
 
     function exibirCapaFilme(movie) {
+        
+        let dadosFilme = localStorage.getItem("DescricaoFilme")
+        let dadosFilmeObj = JSON.parse(dadosFilme)
+        console.log(dadosFilmeObj.Title)
+        console.log(dadosFilme)
 
         let tituloFilme = document.getElementById("tituloPesquisaFilme")
-        tituloFilme.innerHTML = movie.Search[0].Title
-        let anoFilme = document.getElementById("tituloPesquisaFilme")
-        anoFilme.innerHTML = movie.Search[0].Title
+        tituloFilme.innerHTML = dadosFilmeObj.Title
+
 
 
         let planoFundo = document.getElementById("planoFundo")
-        let planoFundoIMG = movie.Search[2].Poster
+        let planoFundoIMG = dadosFilmeObj.Poster
         planoFundo.style.backgroundImage = `url("${planoFundoIMG}")`
         planoFundo.style.visibility = "visible"
 
+
+
         let imgCapa = document.getElementById("imgCapa")
-        imgCapa.src = movie.Search[0].Poster
+        imgCapa.src = dadosFilmeObj.Poster
         imgCapa.style.visibility = "visible"
 
         const imgCard = document.getElementById("imgCard");
@@ -77,7 +86,11 @@ function carregarPagina() {
 
 
     function formatarDescricao(movie) {
-        console.log(movie)
+        localStorage.setItem("DescricaoFilme",JSON.stringify(movie))
+
+        let DescricaoFilme = localStorage.getItem("capasFilme")
+        let DescricaoFilmeObj = JSON.parse(DescricaoFilme)
+
 
         let tituloFilme = document.getElementById("tituloPesquisaFilme")
         let anoFilme = document.getElementById("anoFilme")
@@ -177,14 +190,15 @@ buttonPesquisar.addEventListener("click", capaFilmes)
 buttonPesquisar.addEventListener("click", descricaoFilme)
 
 function descricaoFilme() {
+    
+    let dadosFilme = localStorage.getItem("DescricaoFilme")
+    let dadosFilmeObj = JSON.parse(dadosFilme)
 
-    const movieTitle = localStorage.getItem("tituloFilme")
-
-    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}&plot=full`)
+    fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${dadosFilmeObj.Title}&plot=full`)
         .then(response => response.json())
         .then(data => {
             if (data.Response) {
-
+                console.log("MMMMMMMM" + data)
                 formatarDescricao(data);
             } else {
                 alert(`Filme '${movieTitle}' não encontrado.`);
@@ -194,6 +208,7 @@ function descricaoFilme() {
 }
 
 function formatarDescricao(movie) {
+
 
     let tituloFilme = document.getElementById("tituloPesquisaFilme")
     let anoFilme = document.getElementById("anoFilme")
@@ -215,14 +230,13 @@ function formatarDescricao(movie) {
     sobreFilmeLanguage.innerHTML = movie.Language
 
 
-    tituloFilme.innerHTML = movie.Title
+    tituloFilme.innerHTML = descricaoFilme.Title
     anoFilme.innerHTML = movie.Year
     plotFilme.innerHTML = movie.Plot
     classifiFilme.innerHTML = movie.Rated
     tempoFilme.innerHTML = movie.Runtime
     notaFilme.innerHTML = movie.imdbRating
 
-    console.log(movie.Plot)
 }
 
 
