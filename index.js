@@ -47,14 +47,14 @@ function repetirSlide() {
     setInterval(() => {
 
         if (contador === 4) {
-            carPrincipalImg.style.backgroundImage = `url(../src/img/cardPrincipal.png)`;
+            carPrincipalImg.style.backgroundImage = `url(./src/img/cardPrincipal.png)`;
             awards.innerHTML = "Celebrating Hispanic and Latino Superheroes"
             plotFilme.innerHTML = "From Miles Morales to Blue Beetle"
             carPrincipalImg.style.transitionDuration = "2s";
             contador = 0
         }
         else {
-            carPrincipalImg.style.backgroundImage = `url(../src/img/slideImages/${dadosFilme[contador].id}.png)`;
+            carPrincipalImg.style.backgroundImage = `url(./src/img/slideImages/${dadosFilme[contador].id}.png)`;
             awards.innerHTML = dadosFilme[contador].Awards
             plotFilme.innerHTML = dadosFilme[contador].Plot
 
