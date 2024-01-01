@@ -69,7 +69,10 @@
  }
 
  .tituloMainBig {
-     margin: auto;
+    margin-left: 1rem;
+     display: flex;
+     flex-direction: row;
+     align-self: flex-start;
      margin-bottom: 4rem;
      height: auto;
      width: auto;
