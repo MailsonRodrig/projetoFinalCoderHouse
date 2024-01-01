@@ -69,23 +69,24 @@
  }
 
  .tituloMainBig {
-     margin: 20px;
+     margin: auto;
+     margin-bottom: 4rem;
      height: auto;
-     width: 65%;
+     width: auto;
      display: flex;
-     padding-bottom: 30px;
-     margin-right: 190px;
  }
 
  #arowLeftRight {
+     position: absolute;
      display: flex;
+     top: 50%;
      align-items: center;
      justify-content: space-between;
      height: 100px;
      width: 820px;
  }
 
- #btnMain {
+ .btnMain {
      height: 70px;
      width: auto;
      cursor: pointer;
@@ -175,4 +176,3 @@
      font-family: interLight;
      font-weight: lighter;
  }
-

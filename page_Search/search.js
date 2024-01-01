@@ -1,4 +1,3 @@
-//https://omdbapi.com/?t=hero&page=2&apikey=bae0c5bf
 
 
 const buttonPesquisar = document.getElementById('searchHeader')
@@ -70,8 +69,6 @@ function carregarPagina() {
     buttonPesquisar.addEventListener("click", descricaoFilme)
 
 
-
-    //https://omdbapi.com/?t==${movieTitle}&page=2&apikey=bae0c5bf&plot=full
 
     fetch(`https://www.omdbapi.com/?apikey=fc1fef96&t=${movieTitle}&plot=full`)
         .then(response => response.json())
