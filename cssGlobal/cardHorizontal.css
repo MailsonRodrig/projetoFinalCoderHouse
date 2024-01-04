@@ -15,7 +15,7 @@
     align-content: center;
     justify-content: center;
     height: auto;
-    width: 100vw;
+    width: 100%;
     column-gap: 2em;
 }
 
@@ -89,3 +89,25 @@
     width: 100%;
     border-bottom: 1px solid #313131;
 }
+
+ @media only screen and (max-width: 1023px) {
+
+    .cardHorizontal--index{
+        column-gap: 1em;
+    }
+    #mainIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cardIndexHorizontal{
+        background-color: aqua;
+    }
+    #MoviesCardsImg{
+        height: 15em;
+        width: 100%;
+
+    }
+    
+ }

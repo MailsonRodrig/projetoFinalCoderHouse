@@ -171,3 +171,65 @@ h3 {
     height: 1.5em;
     margin-right: .5em;
 }
+
+@media only screen and (max-width: 1023px) {
+    #dadosApi {
+        width: 100%;
+    }
+
+    .barraInfo {
+        padding: 0;
+    }
+
+    #inforFilme h2 {
+        font-size: .8em;
+    }
+
+    .barraInfo img {
+        height: 1.3em;
+        padding: .3em 0;
+    }
+
+    #notaFilme,
+    #plotFilme {
+        padding-right: 2em;
+    }
+
+    #sobreFilme {
+        width: 90%;
+    }
+
+    .resulApi {
+        height: 100%;
+    }
+
+    #sobreFilme {
+        height: auto;
+    }
+
+    #imgCard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+
+    #imageFundo {
+        padding: 2em;
+        height: 70vh;
+    }
+
+    #planoFundo {
+        height: 100%;
+    }
+
+    #imgCapa {
+        margin-right: 2em;
+    }
+}

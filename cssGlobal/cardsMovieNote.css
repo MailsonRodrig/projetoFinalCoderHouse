@@ -14,8 +14,8 @@
      width: auto;
      background-size: 100%;
      background-repeat: no-repeat;
-     background-size: 100% 100%;
-     background-position: top center;
+     background-size: cover;
+     background-position: center center;
  }
 
  .descriptionMovie {
@@ -41,8 +41,8 @@
  }
 
  .cardsTitulo {
-    display: flex;
-    align-items: center;
+     display: flex;
+     align-items: center;
      height: 30%;
      width: 100%;
      padding-top: 5px;
@@ -163,4 +163,31 @@
 
  #MoviesCardsImg.cardsMovieCategory16 {
      background-image: url(../src/img/capaFilmes/substitutos.png);
+ }
+
+ @media only screen and (max-width: 1023px) {
+     .cardsMovieCategory {
+         margin: 1em 0;
+         width: 14.5em;
+     }
+
+     .cardIndexHorizontal {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     .notaCards {
+         height: 3em;
+     }
+
+     .divButtonCard{
+        height: 4em;
+     }
+     .description{
+       margin: .4em .2em;
+     }
+
+        .buttonMyList{
+            width: 6.5em;
+        }
  }
