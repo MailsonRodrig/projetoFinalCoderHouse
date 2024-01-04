@@ -1,26 +1,25 @@
  .featureVideos {
      display: flex;
      justify-content: space-evenly;
-     height: 540px;
+     min-height: 90vh;
      width: 100%;
-     margin-bottom: 20px;
      background-color: rgb(0, 0, 0);
  }
 
  #featureVideos01 {
-     height: 100%;
+     height: 76vh;
      width: 65%;
  }
 
  #featureVideos02 {
-     height: 100%;
+     height: 76vh;
      width: 30%;
  }
 
  .sectionName {
      display: flex;
      align-items: center;
-     width: 100%;
+     width: auto;
      height: 7%;
      margin: 10px 0;
  }
@@ -39,7 +38,7 @@
  }
 
  .cardPrincipal {
-     height: 90%;
+     height: 100%;
      width: 100%;
  }
 
@@ -51,6 +50,7 @@
      background-size: cover;
      background-repeat: no-repeat;
      background-image: url(../src/img/cardPrincipal.png);
+     background-position: center center;
  }
 
  #movieIconMain {
@@ -69,11 +69,11 @@
  }
 
  .tituloMainBig {
-    margin-left: 1rem;
+     margin-left: 1rem;
      display: flex;
      flex-direction: row;
      align-self: flex-start;
-     margin-bottom: 4rem;
+     margin-bottom: 2rem;
      height: auto;
      width: auto;
      display: flex;
@@ -82,11 +82,11 @@
  #arowLeftRight {
      position: absolute;
      display: flex;
-     top: 50%;
+     top: 45%;
      align-items: center;
      justify-content: space-between;
-     height: 100px;
-     width: 820px;
+     height: 14vh;
+     width: 55%;
  }
 
  .btnMain {
@@ -96,28 +96,29 @@
  }
 
  #card02 {
-     display: flex;
-     flex-direction: column;
-     justify-content: stretch;
 
+     height: 100%;
  }
 
  .latMain {
      display: flex;
      flex-direction: row;
-     align-items: center;
-     align-content: stretch;
+     align-items: stretch;
      background-color: #1F1F1F;
      border-bottom: 1px solid #313131;
-     height: 100%;
+     height: 33.3%;
  }
 
  .capFilm {
      background-size: contain;
      background-repeat: no-repeat;
-     height: 9em;
-     width: 6.5em;
-     margin-left: 10px;
+     height: 90%;
+     width: 30%;
+     margin-left: .5em;
+     margin-top: .5em;
+     background-color: #888888;
+     background-position: center center;
+     background-size: cover;
  }
 
  .capFilmDescription {
@@ -128,14 +129,15 @@
  }
 
  .capFilmDescription h1 {
+    margin-top: .5em;
      color: var(--yellowButton);
-     font-size: 16px;
+     font-size: 1em;
  }
 
  .capFilmDescription h2 {
      padding-top: 5px;
      color: white;
-     font-size: 14px;
+     font-size: .8em;
  }
 
  #minutsMovie {
@@ -146,17 +148,22 @@
  #movieCardMain {
      display: flex;
      align-items: center;
-     width: 80%;
+     width: 100%;
+     height: 100%;
+     margin-top: 1em;
+ }
+
+ #movieCardMain img {
+     height: 2.2em;
  }
 
  #cardsFeature {
-     height: 85%;
+     height: auto;
      width: 65%;
      margin-left: 10px;
      margin-right: 10px;
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
  }
 
  .capFilm#capFilm01 {
@@ -169,10 +176,6 @@
 
  .capFilm#capFilm03 {
      background-image: url(../src/img/cardsMain/card03.png);
- }
-
- #movieCardMain {
-     margin-bottom: 12px;
  }
 
  #movieCardMain h2 {

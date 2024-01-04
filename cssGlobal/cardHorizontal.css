@@ -2,22 +2,25 @@
     height: 50px;
     width: 95%;
     margin: auto;
+    background-color: blue;
 }
 
 .cardIndex {
-    width: 32%;
-    margin-top: 20px;
+    width: 30vw;
 }
 
 .cardHorizontal--index {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     height: auto;
-    width: 95%;
-    margin: auto;
-    gap: 20px;
+    width: 100vw;
+    column-gap: 2em;
+}
 
+.descripIndex {
+    width: 95%;
 }
 
 .descripIndex h1 {
@@ -26,6 +29,7 @@
     font-size: 1.1em;
     font-family: interRegular;
     font-kerning: none;
+    width: 100%;
 }
 
 .descripIndex h2 {
@@ -34,14 +38,15 @@
     font-family: interLight;
     font-weight: lighter;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .cardHorizImg {
-    height: 210px;
+    height: 35vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -84,5 +89,3 @@
     width: 100%;
     border-bottom: 1px solid #313131;
 }
-
- 
