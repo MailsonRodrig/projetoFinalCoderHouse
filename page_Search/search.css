@@ -41,6 +41,7 @@ main {
 .resulApi {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
@@ -173,63 +174,36 @@ h3 {
 }
 
 @media only screen and (max-width: 1023px) {
-    #dadosApi {
-        width: 100%;
-    }
-
-    .barraInfo {
-        padding: 0;
-    }
-
-    #inforFilme h2 {
-        font-size: .8em;
-    }
-
-    .barraInfo img {
-        height: 1.3em;
-        padding: .3em 0;
-    }
-
-    #notaFilme,
-    #plotFilme {
-        padding-right: 2em;
-    }
-
-    #sobreFilme {
-        width: 90%;
+    main {
+        height: auto;
     }
 
     .resulApi {
-        height: 100%;
-    }
-
-    #sobreFilme {
-        height: auto;
+        padding: 1em 0;
+        height: unset;
     }
 
     #imgCard {
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
-        position: relative;
-        margin-top: 1em;
-        padding-bottom: 1em;
         flex-wrap: wrap;
-        gap: 1em;
+        gap: 1.1em;
+        margin-top: 1em;
     }
 
-
-    #imageFundo {
-        padding: 2em;
-        height: 70vh;
+    .barraInfo {
+        padding: unset;
     }
 
-    #planoFundo {
-        height: 100%;
+    #plotFilme,#notaFilme {
+        margin-right: 1.2em;
     }
 
-    #imgCapa {
-        margin-right: 2em;
+    #inforFilme h2 {
+        font-size: 1em;
     }
+        #sobreFilme{
+            margin-top: .5em;
+        }
 }

@@ -1,5 +1,4 @@
-
-.buttonYellow{
+.buttonYellow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,4 +8,21 @@
     border-radius: 200px;
     padding: 0 20px 0 20px;
     cursor: pointer;
+}
+
+#acessarConta {
+    color: black;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 1023px) {
+    .buttonYellow {
+        height: 2.4em;
+        width: 9vw;
+    }
+
+    #acessarConta {
+        display: none;
+    }
+
 }

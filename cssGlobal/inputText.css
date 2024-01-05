@@ -7,8 +7,8 @@ input {
     padding-left: 1em;
 }
 
-input::placeholder{
-   color: rgb(189, 189, 189);
+input::placeholder {
+    color: rgb(189, 189, 189);
     padding-left: 1em;
 }
 
@@ -21,9 +21,9 @@ input::placeholder{
     position: absolute;
     z-index: 1;
     margin-right: 2vw;
-  }
+}
 
-.searchHeaderIcon{
+.searchHeaderIcon {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -31,9 +31,12 @@ input::placeholder{
 }
 
 @media only screen and (max-width: 1023px) {
-    input{
-        width: 30vw;
+    .logotype {
+        height: 1.8em;
     }
 
-
+    input {
+        width: 37vw;
+        height: 50%;
+    }
 }
