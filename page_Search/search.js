@@ -24,7 +24,7 @@ function carregarPagina() {
 
 
     function exibirCapaFilme(movie) {
-        
+
         let dadosFilme = localStorage.getItem("DescricaoFilme")
         let dadosFilmeObj = JSON.parse(dadosFilme)
         console.log(dadosFilmeObj.Title)
@@ -56,7 +56,7 @@ function carregarPagina() {
 
 
         for (let i = 0; i < 9; i++) {
-            if (movie.Search[i].Poster !== "N/A"){
+            if (movie.Search[i].Poster !== "N/A") {
                 let img = document.createElement("img")
                 img.src = movie.Search[i].Poster
 
@@ -83,7 +83,7 @@ function carregarPagina() {
 
 
     function formatarDescricao(movie) {
-        localStorage.setItem("DescricaoFilme",JSON.stringify(movie))
+        localStorage.setItem("DescricaoFilme", JSON.stringify(movie))
 
         let DescricaoFilme = localStorage.getItem("capasFilme")
         let DescricaoFilmeObj = JSON.parse(DescricaoFilme)
@@ -165,9 +165,13 @@ function exibirCapaFilme(movie) {
 
     const imgCard = document.getElementById("imgCard");
 
+
+
     while (imgCard.hasChildNodes()) {
         imgCard.removeChild(imgCard.firstChild);
     }
+
+
 
 
 
@@ -181,13 +185,16 @@ function exibirCapaFilme(movie) {
             imgCard.appendChild(img)
         }
     }
+
+
+
 }
 
 buttonPesquisar.addEventListener("click", capaFilmes)
 buttonPesquisar.addEventListener("click", descricaoFilme)
 
 function descricaoFilme() {
-    
+
     let dadosFilme = localStorage.getItem("DescricaoFilme")
     let dadosFilmeObj = JSON.parse(dadosFilme)
 

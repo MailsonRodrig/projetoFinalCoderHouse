@@ -196,14 +196,16 @@ h3 {
         padding: unset;
     }
 
-    #plotFilme,#notaFilme {
+    #plotFilme,
+    #notaFilme {
         margin-right: 1.2em;
     }
 
     #inforFilme h2 {
         font-size: 1em;
     }
-        #sobreFilme{
-            margin-top: .5em;
-        }
+
+    #sobreFilme {
+        margin-top: .5em;
+    }
 }

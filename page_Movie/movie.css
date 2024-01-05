@@ -4,10 +4,11 @@ main {
     height: auto;
     width: 100vw;
 }
- 
+
 #descFilmeCapa {
     margin-top: 1.5em;
     display: flex;
+    flex-direction: row;
     height: 50vh;
 }
 
@@ -21,7 +22,7 @@ main {
 }
 
 #imgMovie {
-    height:100%;
+    height: 100%;
     width: auto;
 }
 
@@ -35,14 +36,16 @@ main {
     width: 65%;
 }
 
-#divYellow{
+#divYellow {
     margin: 0;
 }
 
-#inputFilmesPesquisa,#searchHeader{
+#inputFilmesPesquisa,
+#searchHeader {
     visibility: hidden;
 }
-#videoTrayler{
+
+#videoTrayler {
     background-image: url(../src/img/capaFilmes/assassinosluadasflores.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,9 +61,10 @@ main {
     width: 98%;
 }
 
-.sectionName{
+.sectionName {
     margin: 2em 0 2em 3em;
 }
+
 #TituloMovie {
     display: flex;
     height: auto;
@@ -79,7 +83,7 @@ h2 {
     align-items: center;
 }
 
-#backGr{
+#backGr {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,14 +92,15 @@ h2 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.699);
 }
- #movieIconM{
+
+#movieIconM {
     cursor: pointer;
     position: absolute;
     height: 30%;
     width: 30%;
- }
+}
 
-iframe{
+iframe {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -126,7 +131,8 @@ iframe{
     display: flex;
     gap: 2em;
 }
-#infoMovieDescricao h2{
+
+#infoMovieDescricao h2 {
     font-weight: bolder;
 }
 
@@ -138,7 +144,7 @@ iframe{
     margin-left: 1em;
 }
 
-#logotipoAcesso{
+#logotipoAcesso {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -147,8 +153,73 @@ iframe{
     margin-left: 2em;
 }
 
-#logotipoAcesso img{
+#logotipoAcesso img {
     height: 5em;
     border-radius: 50%;
     margin-left: 2em;
+}
+
+@media only screen and (max-width: 1023px) {
+    #descFilmeCapa {
+        height: auto;
+        gap: 1em;
+    }
+
+    #capaFilmes_descricao {
+        width: auto;
+        height: auto;
+    }
+
+    #plotMovie {
+        padding-top: .5em;
+        padding-right: 1em;
+    }
+
+    #TituloMovie,
+    #infoMovie,
+    #plotMovie {
+        width: unset;
+    }
+
+    #capaFilmes_movie {
+        width: auto;
+    }
+
+    #imgMovie {
+        margin-left: 1em;
+    }
+
+    #infoMovieDescricao {
+        font-size: 1em;
+    }
+
+    #notaMovie {
+        margin-left: unset;
+    }
+
+    #notaMovie h2 {
+        padding: .5em 0;
+    }
+
+    #imgMovie {
+        width: 11em;
+    }
+
+    #infoMovieDescricao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    .sectionName{
+        height: unset;
+    }
+    #videoTrayler{
+        height: 40vh;
+        width: 90%;
+    }
+    .sectionName{
+        width: 95%;
+    }
 }
