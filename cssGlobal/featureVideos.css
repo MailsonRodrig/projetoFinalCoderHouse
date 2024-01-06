@@ -206,7 +206,7 @@
      .featureVideos {
          justify-content: center;
          min-height: unset;
-         height: 37vh;
+         height: 45vh;
          margin-bottom: 3em;
      }
 
@@ -229,7 +229,7 @@
      }
 
      #arowLeftRight {
-         top: 18%;
+         top: 21%;
      }
 
      .tituloMainBig {
