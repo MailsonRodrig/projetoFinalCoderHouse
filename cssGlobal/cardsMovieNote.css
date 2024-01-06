@@ -166,5 +166,20 @@
  }
 
  @media only screen and (max-width: 1023px) {
- 
+     .cardsMovieCategory {
+         width: 30%;
+         height: 36vh;
+     }
+
+     .notaCards {
+         height: 3em;
+     }
+
+     .descriptionMovie .description {
+         height: 8em;
+     }
+
+     .divButtonCard {
+         height: 9em;
+     }
  }

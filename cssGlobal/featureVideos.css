@@ -186,5 +186,62 @@
 
  @media only screen and (max-width: 1023px) {
 
- 
+     #featureVideos02,
+     #featureVideos01 {
+         height: 100%;
+     }
+
+     #featureVideos01 {
+         width: 60vw;
+     }
+
+     #featureVideos02 {
+         width: 40vw;
+     }
+
+     .sectionName {
+         height: unset;
+     }
+
+     .featureVideos {
+         justify-content: center;
+         min-height: unset;
+         height: 37vh;
+         margin-bottom: 3em;
+     }
+
+     #titleMain h1 {
+         font-size: 1.2em;
+         padding-right: .3em;
+     }
+
+     #titleMain h2 {
+         padding-right: .3em;
+         font-size: .9em;
+     }
+
+     .capFilmDescription h1 {
+         font-size: 1em;
+     }
+
+     .capFilmDescription h2 {
+         font-size: 0.9em;
+     }
+
+     #arowLeftRight {
+         top: 18%;
+     }
+
+     .tituloMainBig {
+         margin-left: unset;
+     }
+
+     #movieIconMain {
+         margin-left: unset;
+         margin: 0 1em;
+     }
+
+     #featureVideos01 .sectionName {
+         margin-left: 1.2em;
+     }
  }

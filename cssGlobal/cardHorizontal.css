@@ -90,6 +90,20 @@
     border-bottom: 1px solid #313131;
 }
 
- @media only screen and (max-width: 1023px) {
- 
- }
+@media only screen and (max-width: 1023px) {
+    .cardHorizImg {
+        height: 13vh;
+    }
+
+    .cardHorizontal--index {
+        column-gap: 1em;
+    }
+
+    .cardIndexHorizontal {
+        flex-wrap: wrap;
+    }
+
+    .descripIndex h2 {
+        margin-bottom: unset;
+    }
+}
