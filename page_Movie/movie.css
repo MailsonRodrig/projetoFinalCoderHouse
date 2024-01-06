@@ -39,7 +39,7 @@ main {
 #divYellow {
     margin: 0;
 }
-
+ 
 #inputFilmesPesquisa,
 #searchHeader {
     visibility: hidden;
@@ -63,6 +63,7 @@ main {
 
 .sectionName {
     margin: 2em 0 2em 3em;
+    width: 97%;
 }
 
 #TituloMovie {
@@ -213,13 +214,11 @@ iframe {
         gap: 1em;
     }
     .sectionName{
-        height: unset;
+        width: 95%;
     }
     #videoTrayler{
         height: 40vh;
         width: 90%;
     }
-    .sectionName{
-        width: 95%;
-    }
+ 
 }
