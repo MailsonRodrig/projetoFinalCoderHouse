@@ -290,5 +290,8 @@
      #titleMain h2 {
          font-size: .8em;
      }
+     .cardPrincipal{
+        width: 100vw;
+     }
 
  }
