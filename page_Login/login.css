@@ -101,54 +101,20 @@ button img {
     border: solid white 1px;
 }
 
-@media only screen and (max-width: 600px) {
-    main {
-        flex-direction: column;
-        height: auto;
-    }
+@media only screen and (max-width: 1023px) {
+
 
     #imgLoginCard {
-        width: 100vw;
+        width: 50vw;
         height: 100vh;
+        background-size: 189% 51%;
+        background-position: 14% top;
     }
 
-    header {
-        justify-content: center;
+    main {
+        height: 50vh;
     }
-
-    #msgLogin {
-        width: 100vw;
-        height: 35em;
-    }
-
-    .searchHeaderIcon {
-        width: unset;
-    }
-
-    input {
-        width: 3em;
-        padding-left: unset;
-    }
-
-    input::placeholder {
-        color: #ffffff;
-    }
-
-    #ocultButt {
-        display: none;
-    }
-
-    .logotype {
-        height: 1.5em;
-    }
-
-    .searchHeaderIcon {
-        width: 2.5em;
-        border-radius: 100%;
-    }
-
-    #searchHeader {
-        right: 40px;
-        background-color: unset;
+    .titLogin #divYellow{
+        height: 100%;
     }
 }
