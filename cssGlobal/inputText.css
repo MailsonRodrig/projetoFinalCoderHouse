@@ -42,10 +42,12 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 767px) {
-    .logotype {
-        display: none;
-    }
-
+   a .buttonYellow{
+    display: none;
+   }
+   .logotype{
+    height: 4vw;
+   }
     input {
         width: 58vw;
         height: 50%;

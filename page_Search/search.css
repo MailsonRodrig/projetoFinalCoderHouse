@@ -209,3 +209,64 @@ h3 {
         margin-top: .5em;
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    .resulApi {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    #imgCapa {
+        margin-left: unset;
+        height: auto;
+        width: 100vw;
+    }
+
+    main {
+        height: auto;
+    }
+
+    #dadosApi {
+        height: auto;
+        width: 100vw;
+    }
+
+    #planoFundo {
+        height: auto;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .barraInfo {
+        flex-wrap: wrap;
+        padding: .5em;
+    }
+
+    #inforFilme {
+        height: auto;
+    }
+
+    #barra02,
+    #barra03 {
+        display: none;
+    }
+
+    #plotFilme {
+        height: auto;
+        width: 96vw;
+    }
+
+    #imgCard {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #imgCard img {
+        height: auto;
+        width: 11em;
+    }
+}

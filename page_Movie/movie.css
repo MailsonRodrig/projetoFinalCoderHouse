@@ -39,7 +39,7 @@ main {
 #divYellow {
     margin: 0;
 }
- 
+
 #inputFilmesPesquisa,
 #searchHeader {
     visibility: hidden;
@@ -213,12 +213,24 @@ iframe {
         align-items: center;
         gap: 1em;
     }
-    .sectionName{
+
+    .sectionName {
         width: 95%;
     }
-    #videoTrayler{
+
+    #videoTrayler {
         height: 40vh;
         width: 90%;
     }
- 
+
+}
+
+@media only screen and (max-width: 767px) {
+    #descFilmeCapa {
+        display: none;
+    }
+
+    #videoTrayler {
+        height: 55vh;
+    }
 }
