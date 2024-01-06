@@ -115,8 +115,46 @@ button img {
     main {
         height: 50vh;
     }
-    .titLogin #divYellow{
+
+    .titLogin #divYellow {
         height: 100%;
     }
-    
+
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #imgLoginCard {
+        width: 100vw;
+        height: 59vh;
+    }
+
+    #msgLogin {
+        width: 90%;
+    }
+
+    .titLogin h1 {
+        font-size: 1.5em;
+        width: 65%;
+    }
+
+    #loginAcess {
+        margin-top: 7em;
+        left: -2vw;
+    }
+
+    .titLogin {
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .titLogin #divYellow {
+        height: 15vh;
+    }
+
 }
