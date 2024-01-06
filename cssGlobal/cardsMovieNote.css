@@ -3,8 +3,8 @@
      flex-direction: column;
      justify-content: space-evenly;
      background-color: rgb(0, 0, 0);
-     height: auto;
-     width: 20%;
+     height: 94vh;
+     width: 18%;
      margin: 20px 10px;
  }
 
@@ -35,7 +35,7 @@
      font-size: 1em;
      font-family: interLight;
      font-weight: lighter;
-     height: 30px;
+     height: 2.5em;
      width: 100%;
      color: white;
  }
@@ -68,7 +68,7 @@
  .divButtonCard {
      align-items: center;
      justify-content: space-around;
-     height: 10%;
+     height: 13%;
      width: 100%;
  }
 
@@ -172,7 +172,7 @@
      }
 
      .notaCards {
-        display: none;
+         display: none;
          height: 3em;
      }
 
