@@ -41,3 +41,14 @@
  .tituloMainBig {
      font-size: 24px;
  }
+
+ @media only screen and (max-width: 767px) {
+    .buttonTrailer h2{
+        display: none;
+    }
+
+        .buttonTrailer img {
+            width: 3em;
+        }
+
+ }

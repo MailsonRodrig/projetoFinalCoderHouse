@@ -183,4 +183,7 @@
      .divButtonCard {
          height: 7em;
      }
+     .cardsTitulo{
+        height: 4vh;
+     }
  }

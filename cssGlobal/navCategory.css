@@ -20,7 +20,18 @@
     margin-left: 30px;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
 
+    .navButtonIndex .buttonYellow {
+        width: 30%;
+    }
 
+    .cardsMovieCategory {
+        width: 44%;
+        height: 46vh;
+    }
+
+    .descriptionMovie .description {
+        display: none;
+    }
 }

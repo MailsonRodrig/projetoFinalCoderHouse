@@ -245,3 +245,50 @@
          margin-left: 1.2em;
      }
  }
+
+ @media only screen and (max-width: 767px) {
+     #featureVideos01 {
+         width: 45vh;
+         height: 55vh;
+     }
+
+     .featureVideos {
+         display: block;
+     }
+
+     #featureVideos02 {
+         width: 100vw;
+         height: 60vh;
+         margin-bottom: 2em;
+     }
+
+     .featureVideos {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         height: auto;
+     }
+
+     #arowLeftRight {
+         top: 28%;
+         width: 90vw;
+     }
+
+     .sectionName {
+         margin-left: 1em;
+     }
+
+     #titleMain {
+         margin-bottom: 1em;
+     }
+
+     #titleMain h1 {
+         font-size: 1em;
+     }
+
+     #titleMain h2 {
+         font-size: .8em;
+     }
+
+ }

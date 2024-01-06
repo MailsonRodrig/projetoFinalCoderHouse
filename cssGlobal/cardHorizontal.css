@@ -107,3 +107,17 @@
         margin-bottom: unset;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .cardHorizontal--index {
+        height: auto;
+        column-gap: .6em;
+    }
+
+    .cardHorizImg{
+        height: 24vh;
+    }
+
+
+ 
+}
